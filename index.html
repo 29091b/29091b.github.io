@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Perfil académico e identificadores científicos.">
+  <title>Perfil Académico</title>
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    })();
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <article class="card">
+      <button id="themeToggle" class="theme-button" type="button"
+              aria-label="Alterar tema" title="Alterar tema">
+        <span id="themeIcon" aria-hidden="true">◐</span>
+      </button>
+
+      <span class="badge">Perfil Académico</span>
+      <h1>Perfil de Investigação</h1>
+      <p class="intro">
+        Perfil académico associado à Universidade Politécnica de Beja, Portugal.
+      </p>
+
+      <section>
+        <h2>Áreas de interesse</h2>
+        <div class="interests">
+          <span class="interest">Cibersegurança</span>
+          <span class="interest">Investigação científica</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Identificadores</h2>
+        <div class="identifiers">
+          <div class="identifier">
+            <span class="identifier-label">ORCID</span>
+            <span class="identifier-value">0009-0001-0819-0545</span>
+          </div>
+          <div class="identifier">
+            <span class="identifier-label">CienciaID</span>
+            <span class="identifier-value">471A-90A0-5C78</span>
+          </div>
+        </div>
+      </section>
+
+      <footer>Perfil académico · UPB · Portugal</footer>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
